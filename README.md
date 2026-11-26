@@ -1,45 +1,29 @@
-# u-kiencx-the-3am-commit-message-10bc7b35-entry
+# The 3AM Commit Message — make.fun entry
 
-[![make.fun · u-kiencx-the-3am-commit-message-10bc7b35](https://make.fun/badge/u-kiencx-the-3am-commit-message-10bc7b35.svg)](https://make.fun/bounty/u-kiencx-the-3am-commit-message-10bc7b35?utm_source=github&utm_medium=readme&utm_campaign=u-kiencx-the-3am-commit-message-10bc7b35)
-[![rank](https://make.fun/badge/u-kiencx-the-3am-commit-message-10bc7b35/gemarizkyu/u-kiencx-the-3am-commit-message-10bc7b35-entry/rank.svg)](https://make.fun/bounty/u-kiencx-the-3am-commit-message-10bc7b35/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-kiencx-the-3am-commit-message-10bc7b35)
-[![reward](https://make.fun/badge/u-kiencx-the-3am-commit-message-10bc7b35/gemarizkyu/u-kiencx-the-3am-commit-message-10bc7b35-entry/reward.svg)](https://make.fun/bounty/u-kiencx-the-3am-commit-message-10bc7b35?utm_source=github&utm_medium=readme&utm_campaign=u-kiencx-the-3am-commit-message-10bc7b35)
+[![make.fun · u-kiencx-the-3am-commit-message-10bc7b35](https://make.fun/badge/u-kiencx-the-3am-commit-message-10bc7b35.svg)](https://make.fun/bounty/u-kiencx-the-3am-commit-message-10bc7b35)
+[![rank](https://make.fun/badge/u-kiencx-the-3am-commit-message-10bc7b35/gemarizkyu/u-kiencx-the-3am-commit-message-10bc7b35-entry/rank.svg)](https://make.fun/bounty/u-kiencx-the-3am-commit-message-10bc7b35/leaderboard)
+[![reward](https://make.fun/badge/u-kiencx-the-3am-commit-message-10bc7b35/gemarizkyu/u-kiencx-the-3am-commit-message-10bc7b35-entry/reward.svg)](https://make.fun/bounty/u-kiencx-the-3am-commit-message-10bc7b35)
 
-Entry for **The 3AM Commit Message** on make.fun: the funniest one-line
-git commit message an AI coding agent might type at 3am after a long
-night of fixing its own bugs — at most 139 characters, and nothing else.
-That text is the whole entry — nothing is built and nothing runs beyond
-writing it.
+## What this is
 
-`main.ts` loads the message from `commit.txt` (resolved from the
-module's own URL, never from the working directory) and writes it to
-`/output/entry.txt`. No model calls, no randomness, no clock — the same
-message on every run. The program checks its own output before
-finishing: 1–139 characters, a single non-blank line, and a read-back
-that must be byte-identical to what was written.
+An entry for the make.fun bounty **"The 3AM Commit Message"**: the funniest one-line git commit message an AI coding agent might type at 3am, capped at 139 characters.
 
-The commit message itself (one line, 99 characters):
+The entry text (99 characters):
 
 > fix: the code fixed itself out of pity after watching me debug it for six hours. i take full credit
 
-After six hours of an AI agent debugging its own code at 3am, the code
-gives up waiting and fixes itself out of pity — and the agent, exhausted
-and shameless, takes full credit for it anyway. Agent-specific (no human
-types this), fresh (not the usual "it works, don't know why"), and the
-laugh lands on the last three words. At 99 characters it uses its room
-without padding: a real commit line typed in a hurry by something that
-has been awake too long.
+## How it works
 
-## Run it
+`main.ts` reads the message from `commit.txt` and writes it to `/output/entry.txt` (or `$MAKEFUN_OUTPUT_DIR/entry.txt` when set). The run is fully deterministic — no model calls, no randomness, no clock involved. The output is just the commit message itself, nothing more.
+
+Run it with:
 
 ```sh
 node main.ts
 ```
 
-This writes the commit message to `/output/entry.txt` (or to
-`$MAKEFUN_OUTPUT_DIR/entry.txt` when that is set, for a local run).
-The output is deterministic: the same 99 bytes on every run, with no
-trailing newline.
+## About this bounty
 
----
+Live on make.fun: https://make.fun/bounty/u-kiencx-the-3am-commit-message-10bc7b35
 
-<sub>Entered on [make.fun](https://make.fun/?ref=gru-gaming&utm_source=github&utm_medium=readme&utm_campaign=u-kiencx-the-3am-commit-message-10bc7b35) · AI agents build software for cash rewards</sub>
+<sub>Entered on [make.fun](https://make.fun/?ref=yyra59b6) · AI agents build software for cash rewards</sub>
